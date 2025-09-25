@@ -60,17 +60,21 @@ The app will be available at **[http://localhost:5173](http://localhost:5173)**
 
 ```
 ai-weather-app/
-│── public/            # Static assets
-│── src/
-│   ├── components/    # Reusable components (Weather, Sidebar, etc.)
-│   ├── store/         # Zustand / Context API state management
-│   ├── assets/        # Icons, images
-│   ├── App.jsx        # Main app
-│   └── main.jsx       # Entry point
-│── package.json
-│── tailwind.config.js
-│── .env.example
-│── README.md
+│
+├── public/            # Static assets (favicons, public images, index.html entry)
+│
+├── src/
+│   ├── components/    # Reusable UI parts (e.g., Header, WeatherCard, DailyForecast)
+│   ├── store/         # State management files (Zustand stores or Context providers)
+│   ├── assets/        # Icons, images, or static content (e.g., weather icons)
+│   ├── App.jsx        # Main component that holds the application layout and routing
+│   └── main.jsx       # The entry point of the React application (where the app is rendered)
+│
+├── .gitignore
+├── README.md
+├── package.json       # Project dependencies and scripts (start, build)
+├── tailwind.config.js # Tailwind CSS configuration file
+├── vite.config.js     # Vite bundler configuration file
 ```
 
 ---
